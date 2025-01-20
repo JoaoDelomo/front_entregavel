@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remover a margem e padding do body para ocupar toda a tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Garantir que o conteúdo ocupe 100% da altura */
+#root {
+  height: 100%;
+}
+
+/* Garantir que o dashboard ocupe 100% da tela sem bordas extras */
+.min-h-screen {
+  height: 100%;
+}
+
+/* global styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Estilos específicos para login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garante que ocupe toda a tela */
+  width: 100%;
+}
+
+.login-box {
+  background: #1a1a1a; /* Escolha a cor de fundo desejada */
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* Limita a largura do login */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5e5ce6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a4ae0;
+}
+
+
